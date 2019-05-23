@@ -71,7 +71,6 @@ func (u *url) CreateUrl(db *sql.DB) error {
 	LogInstance - Inserts a log when a client has done a request
 */
 func (l *urlLog) LogInstance(db *sql.DB) error {
-	// TODO: Add algorithm for the shortURL and check if exists
 	err := db.QueryRow(
 		"INSERT INTO logs(id, url_code, ip_address, accessed_on) VALUES(DEFAULT, $1, $2, $3) RETURNING id",
 		l.UrlCode, l.IpAddress, time.Now().Format(time.RFC3339)).Scan(&l.ID)
