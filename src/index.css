@@ -1,0 +1,68 @@
+body {
+  font-family:Helvetica;
+  font-weight:300;
+  font-size:1.1rem;
+  color:#454444;
+  -webkit-font-smoothing:antialiased;
+  margin : 0; padding : 0;
+}
+
+button {
+  border-radius: 0 10px 10px 0;
+}
+
+button {
+  padding: 2px; 
+  width: 50px;
+}
+
+input {
+  width: 200px
+}
+
+table {
+  margin: 0px auto;
+  border-collapse: collapse;
+}
+
+table td {
+  padding: 8px;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(63, 63, 63)
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold
+}
+
+.nav li {
+  float: left;
+  padding: 10px;
+
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.container {
+    margin: auto;
+    padding: 5%;
+}
